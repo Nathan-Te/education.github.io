@@ -1,0 +1,96 @@
+body{
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-family: Helvetica;
+}
+
+h3{
+  /* color: darkslategray; */
+  color: #39746f;
+  font-size: 25px;
+}
+
+#q{
+  margin: auto;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  width: 60%;
+  padding: 10px;
+  border: 2px solid #2f4f4f;
+}
+
+#key{
+  color: green;
+}
+
+#succ{
+  margin: auto;
+  border-left: 6px solid  #39746f;
+  border-right: 6px solid  #39746f;
+  background-color: #333333;
+  text-align: center;
+  width: 60%;
+  padding: 10px;
+  font-size : 18px;
+}
+
+#elem{
+  border-left: 6px solid  #39746f;
+  border-right: 6px solid  #39746f;
+  background-color: #333333;
+  text-align: left;
+  padding: 10px;
+  font-size: 18px;
+  text-align: justify;
+}
+
+#title{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#sub{
+  font-size: 16px;
+  font-weight: underline;
+}
+
+h1{
+  color: #39746f;
+  text-align: center;
+  font-size: 128px;
+}
+
+input{
+  width: 10%;
+  background-color: #333333;
+  border: 2px solid #2f4f4f;
+  font-size: 18px;
+}
+
+input[type=button]{
+  width: 20%;
+  background-color: #333333;
+  border: 2px solid #2f4f4f;
+  color: white;
+  font-size: 18px;
+}
+
+input[type=text]{
+  width: 30%;
+  height: 32px;
+  text-align: center;
+  color: white;
+}
+
+a {
+  text-decoration: underline;
+  color: #CC3B32;
+}
+
+a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: white;
+  background: #CC3B32;
+}

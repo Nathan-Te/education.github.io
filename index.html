@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Serious Game</title>
+  </head>
+
+  <body>
+
+    <br /><br />
+    <h3> Serious Game </h3>
+    <!-- Explication des règles du jeu  -->
+    <div id="q">
+      Description Serious Game ?
+    </div>
+    <br/><br/>
+
+    <a href="./lire.html"><input type="button" value="Lire" id="bouton_lire" onmouseenter="highlight_button(this)" onmouseleave="delight_button(this)"></a>
+    <a href="./ecrire.html"><input type="button" value="Ecrire" id="bouton_ecrire" onmouseenter="highlight_button(this)" onmouseleave="delight_button(this)"></a>
+    <a href="./compter.html"><input type="button" value="Compter" id="bouton_compter" onmouseenter="highlight_button(this)" onmouseleave="delight_button(this)"></a>
+    <a href="./aidedomicile.html"><input type="button" value="Formation aide à domicile" id="bouton_aide" onmouseenter="highlight_button(this)" onmouseleave="delight_button(this)"></a>
+
+
+    <br/><br/>
+    <p style="color: grey" > Ce serious game a été créé par Mathilde Mottay, Anaïs Mottier, Nathan Tesser, Clément Mainguy. </p>
+    <br/>
+  </body>
+
+  <script>
+
+    function highlight_button(bouton){
+      bouton.style.backgroundColor = "green";
+    }
+
+    function delight_button(bouton){
+      bouton.style.backgroundColor = "#333333";
+    }
+
+  </script>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Serious Game</title>
+  </head>
+
+  <body>
+
+    <br /><br />
+    <h3> Serious Game </h3>
+    <h2> Formation d'aide à domicile </h2>
+    <!-- Explication des règles du jeu  -->
+    <div id="q">
+      Selectionner une difficulté : 
+      <a href="./aidedomicile/facile.html"><input type="button" value="Facile" id="bouton_facile" onmouseenter="highlight_button(this)" onmouseleave="delight_button(this)"></a>
+      <a href="./aidedomicile/difficile.html"><input type="button" value="Difficile" id="bouton_difficile" onmouseenter="highlight_button(this)" onmouseleave="delight_button(this)"></a>
+    </div>
+    <br/><br/>
+
+    <br/><br/>
+    <p style="color: grey" > Ce serious game a été créé par Mathilde Mottay, Anaïs Mottier, Nathan Tesser, Clément Mainguy. </p>
+    <br/>
+  </body>
+
+  <script>
+
+    function highlight_button(bouton){
+      bouton.style.backgroundColor = "green";
+    }
+
+    function delight_button(bouton){
+      bouton.style.backgroundColor = "#333333";
+    }
+
+  </script>
+</html>
