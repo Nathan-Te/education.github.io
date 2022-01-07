@@ -1,0 +1,270 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style01.css">
+    <title>Education</title>
+  </head>
+
+
+
+  <body>
+    <h3>Texte à trou N°1 - Paul va chercher le pain</h3>
+    <!-- Explication des règles du jeu  -->
+    <div id="q">
+      Remplis le texte à trou avec les mots suivants : <b>main, frigo, billet, payer, tour, pratique, rend, refermer, acheter, couper, trottoir, appétissantes, sent, passages
+    </b></div>
+    <br/><br/>
+
+     <!-- Formulaire -->
+    C'est le matin. Paul ouvre la porte de sa maison, et n'oublie pas de 
+    <input type="text" id="mot1" size="8">
+    à clé. Il tient un sac en tissu vide à la 
+    <input type="text" id="mot2" size="5" >
+    et marche rapidement. Il traverse la rue, sur les 
+    <input type="text" id="mot3" size="5" >
+    piétons, longe le 
+    <input type="text" id="mot4" size="5" >
+    , arrive devant la boulangerie. C'est ouvert, il entre. Comme ça 
+    <input type="text" id="mot5" size="5" >
+    bon ! Il attend son 
+    <input type="text" id="mot6" size="5" >
+    , il y a la queue. Il admire la vitrine. Il voit plein de choses 
+    <input type="text" id="mot7" size="5" >
+    : brioches, gâteaux, croissants. Tiens, il décide d'
+    <input type="text" id="mot8" size="5" >
+    deux tartelettes aux framboises en plus du pain. Cela fera un dessert pour sa femme et lui à midi. C'est son tour ; il demande son pain et le fait 
+    <input type="text" id="mot9" size="5" >
+    en tranches ; il n'oublie pas les deux pâtisseries. Il sort son portemonnaie pour 
+    <input type="text" id="mot10" size="5" >
+    . Il a assez de monnaie. Inutile de sortir un 
+    <input type="text" id="mot11" size="5" >
+    . La vendeuse lui 
+    <input type="text" id="mot12" size="5" >
+    la monnaie. Paul la remercie et s'en va. Son grand sac en tissu est bien 
+    <input type="text" id="mot13" size="5" >
+    pour mettre ses achats dedans. Il arrive chez lui, et met les tartelettes dans le 
+    <input type="text" id="mot14" size="5" >.
+
+
+
+    </br></br>
+    <input type="button" value="Valider" onClick="verifieTexteATrou()" onmouseenter="highlight_button(this)" onmouseleave="delight_button(this)">
+    <input type="button" value="Effacer mes réponses" onClick="effacer()" onmouseenter="highlight_button(this)" onmouseleave="delight_button(this)">
+
+    </br></br>
+    <div id="message" hidden=true>Bravo, tu as fini !</div>
+    
+   <br/>
+  </body>
+
+<script>
+
+    function highlight_button(bouton){
+      bouton.style.backgroundColor = "green";
+    }
+
+    function delight_button(bouton){
+      bouton.style.backgroundColor = "#333333";
+    }
+
+    var m1 = document.getElementById("mot1"); 
+    var m2 = document.getElementById("mot2"); 
+    var m3 = document.getElementById("mot3"); 
+    var m4 = document.getElementById("mot4"); 
+    var m5 = document.getElementById("mot5"); 
+    var m6 = document.getElementById("mot6"); 
+    var m7 = document.getElementById("mot7"); 
+    var m8 = document.getElementById("mot8"); 
+    var m9 = document.getElementById("mot9"); 
+    var m10 = document.getElementById("mot10"); 
+    var m11 = document.getElementById("mot11"); 
+    var m12 = document.getElementById("mot12"); 
+    var m13 = document.getElementById("mot13"); 
+    var m14 = document.getElementById("mot14"); 
+    
+    function verifieTexteATrou(){
+        var erreur = 0
+
+
+        if (m1.value == "refermer"){
+            m1.readOnly = true; 
+            m1.style.borderColor = "green"; 
+        }
+        else {
+            erreur += 1; 
+            m1.style.borderColor = "red"; 
+        }
+
+        if (m2.value == "main"){
+            m2.readOnly = true; 
+            m2.style.borderColor = "green"; 
+        }
+        else {
+            erreur += 1; 
+            m2.style.borderColor = "red"; 
+        }
+
+        if (m3.value == "passages"){
+            m3.readOnly = true; 
+            m3.style.borderColor = "green"; 
+        }
+        else {
+            erreur += 1; 
+            m3.style.borderColor = "red"; 
+        }
+
+        if (m4.value == "trottoir"){
+            m4.readOnly = true; 
+            m4.style.borderColor = "green"; 
+        }
+        else {
+            erreur += 1; 
+            m4.style.borderColor = "red"; 
+        }
+
+        if (m5.value == "sent"){
+            m5.readOnly = true; 
+            m5.style.borderColor = "green"; 
+        }
+        else {
+            erreur += 1; 
+            m5.style.borderColor = "red"; 
+        }
+
+        if (m6.value == "tour"){
+            m6.readOnly = true; 
+            m6.style.borderColor = "green"; 
+        }
+        else {
+            erreur += 1; 
+            m6.style.borderColor = "red"; 
+        }
+
+        if (m7.value == "appétissantes"){
+            m7.readOnly = true; 
+            m7.style.borderColor = "green"; 
+        }
+        else {
+            erreur += 1; 
+            m7.style.borderColor = "red"; 
+        }
+
+        if (m8.value == "acheter"){
+            m8.readOnly = true; 
+            m8.style.borderColor = "green"; 
+        }
+        else {
+            erreur += 1; 
+            m8.style.borderColor = "red"; 
+        }
+
+        if (m9.value == "couper"){
+            m9.readOnly = true; 
+            m9.style.borderColor = "green"; 
+        }
+        else {
+            erreur += 1; 
+            m9.style.borderColor = "red"; 
+        }
+
+        if (m10.value == "payer"){
+            m10.readOnly = true; 
+            m10.style.borderColor = "green"; 
+        }
+        else {
+            erreur += 1; 
+            m10.style.borderColor = "red"; 
+        }
+
+        if (m11.value == "billet"){
+            m11.readOnly = true; 
+            m11.style.borderColor = "green"; 
+        }
+        else {
+            erreur += 1; 
+            m11.style.borderColor = "red"; 
+        }
+
+        if (m12.value == "rend"){
+            m12.readOnly = true; 
+            m12.style.borderColor = "green"; 
+        }
+        else {
+            erreur += 1; 
+            m12.style.borderColor = "red"; 
+        }
+
+        if (m13.value == "pratique"){
+            m13.readOnly = true; 
+            m13.style.borderColor = "green"; 
+        }
+        else {
+            erreur += 1; 
+            m13.style.borderColor = "red"; 
+        }
+
+        if (m14.value == "frigo"){
+            m14.readOnly = true; 
+            m14.style.borderColor = "green"; 
+        }
+        else {
+            erreur += 1; 
+            m14.style.borderColor = "red"; 
+        }
+
+        if(erreur == 0){
+            m = document.getElementById("message"); 
+            m.hidden=false; 
+        }
+
+    }
+
+   function effacer(){
+    m1.value = ''; 
+    m1.readOnly = false; 
+
+    m2.value = ''; 
+    m2.readOnly = false; 
+
+    m3.value = ''; 
+    m3.readOnly = false; 
+
+    m4.value = ''; 
+    m4.readOnly = false; 
+
+    m5.value = ''; 
+    m5.readOnly = false; 
+
+    m6.value = ''; 
+    m6.readOnly = false; 
+
+    m7.value = ''; 
+    m7.readOnly = false; 
+
+    m8.value = ''; 
+    m8.readOnly = false; 
+
+    m9.value = ''; 
+    m9.readOnly = false; 
+
+    m10.value = ''; 
+    m10.readOnly = false; 
+
+    m11.value = ''; 
+    m11.readOnly = false; 
+
+    m12.value = ''; 
+    m12.readOnly = false; 
+
+    m13.value = ''; 
+    m13.readOnly = false; 
+
+    m14.value = ''; 
+    m14.readOnly = false; 
+    }
+</script>
+</html>

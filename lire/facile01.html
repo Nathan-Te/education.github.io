@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../style.css">
+    <title>Education</title>
+  </head>
+
+  <body>
+
+    <br /><br />
+    <h3>Lire</h3>
+    <h4>Associer une image à une phrase</h4>
+    <div id="q">
+     Dans cet exercice il faut trouver l'image correspondante à la phrase.
+    </div>
+    <br/><br/>
+    <p> Il porte un casque.</p>
+  
+    <!-- Réponses possibles  -->
+    <form>
+      <!-- Casquette  -->
+      <input type="radio" id="rep" name="q1Lire" value="casquette" style="width:40px;height:100px;">
+      <label for="rep1"><img src="../img/casquette.png" style="width:100px;height:150px;" value="rep1"></label>
+      <!-- Casque  -->
+      <input type="radio" id="ok" name="q1Lire" value="casque" style="width:40px;height:100px;">
+      <label for="rep2"><img src="../img/casque.png" style="width:200px;height:150px;" value="rep2"></label>
+      <!-- Masque  -->
+      <input type="radio" id="rep" name="q1Lire" value="masque" style="width:40px;height:100px;">
+      <label for="rep3"><img src="../img/masque.png" style="width:150px;height:150px;" value="rep3"></label>
+      <br/><br/>
+      <input type="button" value="Confirmer" onClick="Validation()" onmouseenter="highlight_button(this)" onmouseleave="delight_button(this)">
+    </form>
+    
+  </body>
+
+<script>
+  function Validation(){
+    if (document.getElementById('ok').checked) {
+      console.log("VRAI")
+    }
+    else console.log("FAUX")
+  }
+
+  function highlight_button(bouton){
+      bouton.style.backgroundColor = "green";
+    }
+
+    function delight_button(bouton){
+      bouton.style.backgroundColor = "#333333";
+    }
+</script>
+</html>
